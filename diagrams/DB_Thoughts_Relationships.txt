@@ -1,0 +1,31 @@
+Note: Not sure if a realtionship can be part of another, maybe I'll make comp_prod an entity then. 
+
+Table delivery services may be redundant, but we need 10+ tables, so going to create it
+
+Assuming that each street is unique and can only hold one person/company
+
+(PLACED ORDER
+1 customer can place many orders
+many orders can be placed by one customer 
+1 order can have 1 customer)
+
+HAS ORDERED PRODUCTS
+1 customer can have many products
+Many products can be own by 1 customer
+
+ARE BOUGHT
+Many customer products can be part/bought of company products
+and the other way around
+
+ORDER
+1 Order can have many customer products
+Many customer products can be part of one order
+
+PAYMENTS
+1 payment can be part of 1 order
+1 payment can have many orders
+1 order can have one payment
+
+DELIVERY
+1 delivery service can ship many order
+1 order can be shipped by many delivery services
