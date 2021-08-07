@@ -1,8 +1,18 @@
+
+
+Note: The quantity for products is just there for good measure, 
+probably won't use it to not complicate things any further. Edit: Guess I kind of did use it.
+
 Note: Not sure if a realtionship can be part of another, maybe I'll make comp_prod an entity then. 
+Note: One could add a bank table to store specific payment methods per customer.
+
 
 Table delivery services may be redundant, but we need 10+ tables, so going to create it
 
 Assuming that each street is unique and can only hold one person/company
+
+Could've normalized further by making ZIP codes into their own table, like for Vienna.
+But probably not needed for this example.
 
 (PLACED ORDER
 1 customer can place many orders
